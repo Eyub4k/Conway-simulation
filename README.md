@@ -7,6 +7,11 @@ Ce projet est une simulation du **Jeu de la Vie** de John Conway, implémentée 
 - Simulation optimisée avec un affichage rapide
 - Mise à jour des cellules selon les règles classiques de Conway
 
+## 📸 Aperçu
+Voici un aperçu de la simulation en action :
+
+![Simulation du Jeu de la Vie](assets/conway_screen.jpg)
+
 ## 🛠️ Installation et Compilation
 ### 📥 Prérequis
 - **Raylib** (bibliothèque graphique)
