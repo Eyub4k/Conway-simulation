@@ -1,6 +1,6 @@
 #include "raylib.h"
 #include <vector>
-#include <cstdlib> // Pour rand()
+#include <cstdlib> 
 
 // Configuration de la simulation
 const int CELL_SIZE = 2;                          // Taille d'une cellule (pixels)
@@ -17,7 +17,7 @@ std::vector<std::vector<int>> tempGrid(GRID_HEIGHT, std::vector<int>(GRID_WIDTH)
 void initializeGrid() {
     for (int y = 0; y < GRID_HEIGHT; y++) {
         for (int x = 0; x < GRID_WIDTH; x++) {
-            grid[y][x] = rand() % 2; // 0 ou 1 aléatoire
+            grid[y][x] = rand() % 2; 
         }
     }
 }
@@ -84,8 +84,9 @@ int main() {
         BeginDrawing();
         ClearBackground(BLACK);
 
-        drawGrid();  // Dessiner la grille actuelle
-        updateGrid(); // Mettre à jour la grille
+        // Mettre à jour la grille et dessiner la grille actuelle
+        drawGrid();  
+        updateGrid(); 
 
         EndDrawing();
     }
